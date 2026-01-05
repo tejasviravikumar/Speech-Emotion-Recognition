@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 df = pd.read_csv('ravdess_metadata.csv')
-feature_cols = [f"mfcc_{i+1}" for i in range(13)] + \
+feature_cols = [f"mfcc_{i+1}" for i in range(30)] + \
                [f"sc_{i+1}" for i in range(7)] + \
                [f"chroma_{i+1}" for i in range(12)]
 
